@@ -2,16 +2,16 @@
 :root {
     --white-color: #fff;
     --black-color: #3d3d3d;
-    --font-size: 16px;
-    --middle-font-size: 18px;
-    --big-font-size: 32px;
-    --small-padding: 20px;
-    --middle-padding: 50px;
-    --big-padding: 80px;
+    --main-color: rgb(255, 0, 0);
+    --small-font-size: 13px;
+    --middle-font-size: 16px;
+    --small-padding: 5px;
+    --middle-padding: 30px;
+    --small-margin: 10px
 }
 body {
     font-family: '맑은고딕', sans-serif;
-    font-size: var(--font-size);
+    font-size: var(--small-font-size);
     color: var(--black-color);
     line-height: 1.5;
 }
@@ -24,7 +24,7 @@ body {
 header {
     width: 100%;
     height: 90px;
-    background-color: #fff;
+    background-color: var(--white-color);
     position: fixed;
     left: 0;
     top: 0;
@@ -51,7 +51,7 @@ header > div > h1 > img {
 }
 #nav {
     width: 55%;
-    font-size: var(--font-size);
+    font-size: var(--middle-font-size);
 }
 #nav > ul {
     display: flex;
@@ -69,13 +69,13 @@ header > div > h1 > img {
     display: block;
 }
 #nav > ul > li:hover .sub_nav > .inner {
-    border-top: 1px solid red;
+    border-top: 1px solid var(--main-color);
 }
 .sub_nav {
     position: absolute;
     left: 0;
     top: 90px;
-    background-color: #fff;
+    background-color: var(--white-color);
     width: 100%;
     height: 150px;
     display: none;
@@ -83,26 +83,26 @@ header > div > h1 > img {
 .sub_nav > .inner {
     display: flex;
     justify-content: flex-start;
-    padding: 30px 0;
+    padding: var(--middle-padding) 0;
 }
 .sub_nav > .inner > div {
     font-size: 17px;
-    width: 13%;
+    width: 14%;
     margin-right: 40px;
 }
 .sub_nav > .inner > ul {
     display: flex;
-    font-size: 13px;
+    font-size: var(--small-font-size);
     text-align: center;
 }
 .sub_nav > .inner > ul > li {
     padding: 0 25px;
 }
 .sub_nav > .inner > ul > li p {
-    padding: 5px 0;
+    padding: var(--small-padding) 0;
 }
 .sub_nav > .inner > ul > li:hover {
-    color: red;
+    color: var(--main-color);
 }
 #brand_bg, #store_bg {
     padding: 0 25px;
@@ -124,10 +124,10 @@ header > div > h1 > img {
     font-size: 47px;
     font-weight: 400;
     letter-spacing: -5px;
-    margin: 10px 0;
+    margin: var(--small-margin) 0;
 }
 .visual_title p {
-    font-size: 16px;
+    font-size: var(--middle-font-size);
 }
 /********** main_visual ***********/
 /********** slide_control ***********/
@@ -137,7 +137,7 @@ header > div > h1 > img {
     display: flex;
     justify-content: space-between;
     background: none;
-    border: 1px solid #3d3d3d;
+    border: 1px solid var(--black-color);
     text-align: center;
     position: absolute;
     left: 400px;
@@ -162,10 +162,10 @@ header > div > h1 > img {
 }
 #slide_control p a:hover {
     background-color: #444444;
-    color: #fff;
+    color: var(--white-color);
 }
 #slide_control p:not(:last-child) {
-    border-right: 1px solid #3d3d3d;
+    border-right: 1px solid var(--black-color);
 }
 /********** slide_control ***********/
 
@@ -180,11 +180,11 @@ header > div > h1 > img {
     height: 100%;
 }
 #more_contents > ul > li > div {
-    padding: 30px 40px 30px;
-    color: #fff;
+    padding: var(--middle-padding) 40px var(--middle-padding);
+    color: var(--white-color);
 }
 #more_contents > ul > li > div p:nth-child(1) {
-    font-size: 12px;
+    font-size: var(--small-font-size);
     line-height: 22px;
 }
 #more_contents > ul > li > div h3 {
@@ -192,12 +192,12 @@ header > div > h1 > img {
     line-height: 22px;
 }
 #more_contents > ul > li > div p:nth-child(3) {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: var(--small-font-size);
+    margin-top: var(--small-margin);
 }
 #more_contents > ul > li > div > a {
     float: right;
-    font-size: 17px;
+    font-size: var(--middle-font-size);
 }
 #more_contents > ul > li:nth-child(1) {
     background: url(../img/theborn_icon.png) right bottom no-repeat;
@@ -221,7 +221,7 @@ header > div > h1 > img {
 /********************* 컨텐츠 영역 *********************/
 /********************* 하단 영역 *********************/
 #news {
-    font-size: 13px;
+    font-size: var(--small-font-size);
     width: 100%;
     height: 50px;
     background-color: rgb(221, 221, 221);
@@ -244,8 +244,8 @@ header > div > h1 > img {
 #sub_news p:nth-child(1) {
     width: 35px;
     height: 17px;
-    border: 1px solid red;
-    color: red;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -266,29 +266,29 @@ header > div > h1 > img {
     align-items: center;
 }
 #icon ul li a img {
-    padding-right: 5px;
+    padding-right: var(--small-padding);
 }
 /********** news ***********/
 address {
-    font-size: 13px;
+    font-size: var(--small-font-size);
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: var(--middle-padding) 0;
     color: #666666;
 }
 address div:nth-child(2) {
     width: 60%;
 }
 address div p:nth-child(2) {
-    margin-bottom: 10px;
+    margin-bottom: var(--small-margin);
 }
 address div ul {
     width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: var(--small-margin);
 }
 address div ul span {
     width: 2px;
@@ -296,12 +296,12 @@ address div ul span {
     background-color: #ccc;
 }
 address div ul li:nth-child(1) {
-    color: red;
+    color: var(--main-color);
     font-weight: bold;
 }
 #goto_family_site {
-    border: 1px solid #3d3d3d;
-    padding: 6px;
+    border: 1px solid var(--black-color);
+    padding: var(--small-padding);
 }
 /********** address ***********/
 
