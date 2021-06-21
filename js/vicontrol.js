@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let item = document.querySelectorAll('.swiper-slide');
 
-    console.log("item.length ====> " + item.length);
+    function SetPageNumber(nPageNumber)
+    {
+        console.log(nPageNumber);
+        document.getElementById("page_number").innerHTML = nPageNumber;
+    }
 
-    item.forEach(img => {
-        console.log(img);
-    });
 
     // prev.addEventListener("click",function(){
     //     alert("이전");
