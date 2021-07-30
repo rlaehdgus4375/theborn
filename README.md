@@ -3,7 +3,7 @@
 
 사용 프로그램 : VSCODE https://code.visualstudio.com/
 
-스타일 :css 사용
+스타일 : css 사용
 
 플러그인:
 
