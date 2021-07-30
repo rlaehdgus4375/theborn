@@ -10,12 +10,10 @@ https://code.visualstudio.com/
 
 플러그인 : swiper 플러그인
 
-js -> jquery 파일 모음
-    jquery-3.6.0.min.js
+js -> jquery 파일 모음 (jquery-3.6.0.min.js)
 
 css -> css파일 모음
 
-img -> 이미지 파일 모음
-    더본코리아 이미지 참고
+img -> 이미지 파일 모음 (더본코리아 이미지 참고)
 
 index.html 메인페이지 
